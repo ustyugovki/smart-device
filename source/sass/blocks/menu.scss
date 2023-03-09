@@ -1,0 +1,65 @@
+.menu {
+  margin-left: 15px;
+
+  @include vp-1023 {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  @include vp-374 {
+    margin-right: 10px;
+  }
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
+  width: 480px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  @include noselect;
+
+  @include vp-1023 {
+    width: 100px;
+    gap: 20px;
+    margin-top: -14px;
+  }
+
+  @include vp-374 {
+    margin-top: -6px;
+  }
+}
+
+.menu__icon-email,
+.menu__icon-phone {
+  margin-right: 15px;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+}
+
+.menu__link {
+  width: 225px;
+  min-height: 20px;
+  display: flex;
+
+  @include vp-1023 {
+    margin-bottom: 0;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.menu__link-text {
+  @include vp-1023 {
+    display: none;
+  }
+}

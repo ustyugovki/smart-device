@@ -1,0 +1,58 @@
+.button {
+  padding: 0;
+  width: 160px;
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  font-family: $ff-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border: none;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--header {
+    border-radius: 3px;
+    border: 1px solid var(--color-alice-blue2);
+    color: var(--color-alice-blue);
+    background-color: var(--color-black-pearl);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-pacific-blue);
+  }
+
+  &:active {
+    border-color: var(--color-pacific-blue);
+  }
+
+  &:disabled {
+    color: var(--color-black-pearl);
+    background-color: var(--color-alice-blue2);
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-deep-sky-blue);
+    outline-offset: -2px;
+    z-index: 50;
+  }
+
+  @include noselect;
+}
