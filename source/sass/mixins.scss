@@ -36,6 +36,21 @@
   }
 }
 
+@mixin noselect {
+  /* iOS Safari */
+  -webkit-touch-callout: none;
+  /* Safari */
+  -webkit-user-select: none;
+  /* Konqueror HTML */
+  -khtml-user-select: none;
+  /* Old versions of Firefox */
+  -moz-user-select: none;
+  /* Internet Explorer/Edge */
+  -ms-user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  user-select: none;
+}
+
 // Desktop first
 
 @mixin vp-1919 {
@@ -68,8 +83,20 @@
   }
 }
 
+@mixin vp-770 {
+  @media (max-width: ($vp-770)) {
+    @content;
+  }
+}
+
 @mixin vp-374 {
   @media (max-width: ($vp-375 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-320 {
+  @media (max-width: ($vp-320)) {
     @content;
   }
 }
