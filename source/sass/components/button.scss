@@ -4,6 +4,7 @@
   min-height: 40px;
 
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -38,6 +39,16 @@
     border: none;
     color: var(--color-alice-blue);
     background-color: var(--color-deep-sky-blue);
+  }
+
+  &--about {
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 3px;
+
+    color: var(--color-deep-sky-blue);
+    border: 1px solid var(--color-deep-sky-blue);
+    background-color: var(--color-default-white);
   }
 
   &:hover,
