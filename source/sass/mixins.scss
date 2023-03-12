@@ -101,6 +101,12 @@
   }
 }
 
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

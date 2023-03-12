@@ -1,0 +1,11 @@
+.social-list {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  @include list-reset;
+}
+
+.social-list__img {
+  color: var(--color-black-pearl);
+}
