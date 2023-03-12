@@ -68,7 +68,41 @@
 
       <main>
         <h1 class="visually-hidden">Печатные платы и комплектующие Service Devices</h1>
-      </main>
+
+        <section class="intro">
+          <div class="container">
+            <h2>Печатные платы</h2>
+
+            <!--
+              min-width — от указанного значения и выше, включая значение.
+              max-width — от указанного значения и ниже, включая значение.
+            -->
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="img/intro/intro-desktop.webp 1x,
+                  img/intro/intro-desktop@2x.webp 2x"
+              >
+
+              <img
+                class="intro__bg-image"
+                src="img/intro/intro-desktop.jpg"
+                srcset="img/intro/intro-desktop@2x.jpg 2x"
+                alt="Фото продукции."
+                width="1920"
+                height="880"
+              >
+            </picture>
+
+            <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+
+            <button class="intro__button button button--intro" type="button">
+              <span class="intro__button-text1">Получить бесплатную консультацию</span>
+              <span class="intro__button-text2">Бесплатная консультация</span>
+            </button>
+          </div>
+        </section>
 
       <footer class="footer">
         <div class="footer__wrapper container">

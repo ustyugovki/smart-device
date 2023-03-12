@@ -29,6 +29,17 @@
     background-color: var(--color-black-pearl);
   }
 
+  &--intro {
+    width: 410px;
+    min-height: 55px;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 3px;
+    border: none;
+    color: var(--color-alice-blue);
+    background-color: var(--color-deep-sky-blue);
+  }
+
   &:hover,
   &:focus {
     color: var(--color-pacific-blue);
