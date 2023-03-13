@@ -105,6 +105,10 @@
   width: 180px;
   height: 45px;
 
+  &--nojs {
+    display: none;
+  }
+
   @media (max-width: 767px) {
     width: 160px;
     height: 35px;
