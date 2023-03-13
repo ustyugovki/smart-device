@@ -28,15 +28,22 @@
     }
   }
 }
-
-.swiper-img-wrapper img {
-  @media (max-width: 1439px) {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.products__swiper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.swiper {
+  width: 350px;
+  height: 100%;
+}
+
+.swiper-img-wrapper img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
 
 .swiper-img-wrapper p {
   margin: 0;
@@ -54,7 +61,7 @@
 
 .swiper-button-next {
   position: absolute;
-  top: 618px;
+  top: 620px;
   left: 306px;
 }
 
@@ -74,3 +81,5 @@
 .swiper-button-next svg {
   z-index: 4;
 }
+
+
