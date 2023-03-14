@@ -107,6 +107,35 @@
   list-style-type: none;
 }
 
+@mixin hover-white-blue {
+  &:hover,
+  &:focus {
+    color: var(--color-pacific-blue);
+    text-shadow: 0 0 8px var(--color-pacific-blue);
+    background-color: var(--color-black-pearl);
+  }
+
+  &:active {
+    color: var(--color-cerulean);
+  }
+
+  &:disabled {
+    color: var(--color-black-pearl);
+    background-color: var(--color-alice-blue2);
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 1px #2c39f2, 0 0 2px #2c39f2, 0 0 6px #2c39f2, 0 0 6px #2c39f2, inset 0 0 1px #2c39f2, inset 0 0 2px #2c39f2, inset 0 0 6px #2c39f2, inset 0 0 6px #2c39f2;
+    outline-offset: -2px;
+    z-index: 50;
+  }
+}
+
 // Mobile first
 
 // @mixin vp-375 {

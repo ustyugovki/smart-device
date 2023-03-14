@@ -19,6 +19,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--color-default-white);
+
+  @include noselect;
 }
 
 .nav-list {
@@ -49,4 +51,13 @@
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  @include hover-white-blue;
+  @include noselect;
 }

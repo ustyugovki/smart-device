@@ -51,30 +51,6 @@
     background-color: var(--color-default-white);
   }
 
-  &:hover,
-  &:focus {
-    color: var(--color-pacific-blue);
-  }
-
-  &:active {
-    border-color: var(--color-pacific-blue);
-  }
-
-  &:disabled {
-    color: var(--color-black-pearl);
-    background-color: var(--color-alice-blue2);
-  }
-
-  &:focus:not(:focus-visible) {
-    box-shadow: none;
-    outline: 0;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--color-deep-sky-blue);
-    outline-offset: -2px;
-    z-index: 50;
-  }
-
+  @include hover-white-blue;
   @include noselect;
 }

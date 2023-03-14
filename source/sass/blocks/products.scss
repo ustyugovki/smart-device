@@ -93,10 +93,15 @@
   color: var(--color-default-white);
 }
 
+.swiper-img-wrapper .swiper-button-prev {
+  display: none;
+}
+
 .swiper-button-next {
   position: absolute;
   top: 620px;
   left: 306px;
+
 
   @media (max-width: 1439px) {
     top: 220px;

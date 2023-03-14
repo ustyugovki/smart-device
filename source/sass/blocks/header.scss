@@ -35,6 +35,12 @@
 
 .header__logo-link {
   @include noselect;
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: none;
+    outline: 0;
+  }
 }
 
 .header__image {
