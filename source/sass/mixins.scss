@@ -112,7 +112,8 @@
   &:focus {
     color: var(--color-pacific-blue);
     text-shadow: 0 0 8px var(--color-pacific-blue);
-    background-color: var(--color-black-pearl);
+    // background-color: var(--color-black-pearl);
+    background-color: transparent;
   }
 
   &:active {
