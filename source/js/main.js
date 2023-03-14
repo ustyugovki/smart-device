@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 
 import {aboutShow} from './modules/modals/about';
 import {scrollToProducts} from './modules/modals/scroll-to';
+import {openAccordion} from './modules/modals/accordion';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   aboutShow();
   scrollToProducts();
+  openAccordion();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
