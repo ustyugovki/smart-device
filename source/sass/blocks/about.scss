@@ -104,6 +104,7 @@
 .about__button {
   width: 180px;
   height: 45px;
+  grid-area: btn;
 
   &--nojs {
     display: none;

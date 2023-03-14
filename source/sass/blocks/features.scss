@@ -17,17 +17,15 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(595px, 1fr));
-  grid-gap: 30px;
+  gap: 30px;
   list-style: none;
 
   @media (max-width: 1439px) {
     grid-template-columns: repeat(2, minmax(320px, 1fr));
-    grid-gap: 30px;
   }
 
   @media (max-width: 767px) {
     grid-template-columns: minmax(270px, 1fr);
-    grid-gap: 30px;
   }
 }
 
