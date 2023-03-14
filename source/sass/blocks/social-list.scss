@@ -1,0 +1,33 @@
+.social-list {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  @include list-reset;
+}
+
+.social-list__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--color-alice-blue3);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px var(--color-pacific-blue);
+	}
+}
+
+.social-list__item,
+.social-list__link,
+.social-list__img {
+  &:focus,
+  &:focus-visible {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  @include hover-white-blue;
+  @include noselect;
+  display: block;
+}

@@ -4,6 +4,7 @@
   min-height: 40px;
 
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
@@ -29,30 +30,27 @@
     background-color: var(--color-black-pearl);
   }
 
-  &:hover,
-  &:focus {
-    color: var(--color-pacific-blue);
+  &--intro {
+    width: 410px;
+    min-height: 55px;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 3px;
+    border: none;
+    color: var(--color-alice-blue);
+    background-color: var(--color-deep-sky-blue);
   }
 
-  &:active {
-    border-color: var(--color-pacific-blue);
+  &--about {
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 3px;
+
+    color: var(--color-deep-sky-blue);
+    border: 1px solid var(--color-deep-sky-blue);
+    background-color: var(--color-default-white);
   }
 
-  &:disabled {
-    color: var(--color-black-pearl);
-    background-color: var(--color-alice-blue2);
-  }
-
-  &:focus:not(:focus-visible) {
-    box-shadow: none;
-    outline: 0;
-  }
-
-  &:focus-visible {
-    outline: 2px solid var(--color-deep-sky-blue);
-    outline-offset: -2px;
-    z-index: 50;
-  }
-
+  @include hover-white-blue;
   @include noselect;
 }

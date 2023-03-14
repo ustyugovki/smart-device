@@ -16,30 +16,7 @@
     color: var(--color-alice-blue);
   }
 
-  &:hover,
-  &:focus {
-    color: var(--color-pacific-blue);
-  }
 
-  &:active {
-    opacity: 0.8;
-  }
-
-  &:disabled {
-    color: var(--color-black-pearl);
-    background-color: var(--color-alice-blue2);
-  }
-
-  &:focus:not(:focus-visible) {
-    box-shadow: none;
-    outline: 0;
-  }
-
-  &:focus-visible {
-    outline: 1px solid var(--color-alice-blue);
-    outline-offset: -2px;
-    z-index: 50;
-  }
-
+  @include hover-white-blue;
   @include noselect;
 }
